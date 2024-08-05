@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import './FoodDisplay.css'
 import { StoreContext } from '../../Context/StoreContext'
-import FoodItem from '../FoodItems/FoodItems'
+import FoodItem from '../FoodItem/FoodItems'
 
 
 
@@ -13,24 +13,12 @@ const FoodDisplay = (category) => {
 
 
 
-
   return (
     <div className='food-display' id="food-display">
         <h1>Top dishes near you</h1>
 <div className='food-display-list' >
     {food_list.map((item,index)  => {
       return   <FoodItem  key={index} id={item.id} name={item.name} description={item.description} price={item.price} image={item.image} />
-
-
-
-
-
-
-      
-
-
-
-        
       
     })}
 </div>

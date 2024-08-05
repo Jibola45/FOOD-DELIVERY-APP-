@@ -1,6 +1,6 @@
 import React from 'react'
-import './FoodItem.css'
-import {assets} from '../../Components/FoodItem'
+import './FoodItems.css'
+import {assets} from '../../Assets/assets'
 
 
 
